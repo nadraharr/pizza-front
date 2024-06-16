@@ -1,0 +1,59 @@
+header {
+  .header__background {
+    background-image: linear-gradient(#2e2f328c, #1f202299),
+      url("img/header-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 90%;
+
+    .header__container {
+      height: 100px;
+      display: flex;
+      align-items: center;
+      .header__nav {
+        width: 100%;
+        .header__nav-menu {
+          display: flex;
+          justify-content: space-between;
+          .header__menu-btn {
+            .header__navicon {
+            }
+          }
+          .header__nav-list {
+            display: inline-flex;
+            gap: 24px;
+            flex-flow: row wrap;
+
+            .header__nav-item {
+              a {
+                font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+                  sans-serif;
+                font-size: large;
+                letter-spacing: 0.07rem;
+                color: blanchedalmond;
+                position: relative;
+              }
+              a::before {
+                content: "";
+                bottom: -4px;
+                left: 0;
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                color: blanchedalmond;
+                opacity: 0.8;
+                transform: scaleX(0);
+                transition: all 0.2s ease-in-out;
+              }
+
+              a:hover::before {
+                transform: scaleX(1);
+                background-color: blanchedalmond;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
