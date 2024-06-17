@@ -13,12 +13,14 @@
     ></script>
   </head>
   <body>
-    <header
-      class="header"
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="header.partial.html"
-    ></header>
+    <header class="header">
+      <nav
+        class="header__nav container"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="header-nav.partial.html"
+      ></nav>
+    </header>
     <main></main>
     <footer></footer>
   </body>
