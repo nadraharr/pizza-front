@@ -1,0 +1,6 @@
+@import url(global.css);
+@import url(header.css);
+
+.pizzeria-menu__container {
+    display: grid;
+}
