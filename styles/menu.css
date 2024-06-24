@@ -1,16 +1,30 @@
 @import url(global.css);
 @import url(header-nav.partial.css);
+@import url(special-offers.partial.css);
+@import url(faq.partial.css);
 @import url(footer.partial.css);
 
 .pizzeria-menu {  
+    background-color: blanchedalmond;    
 }
 
 .pizzeria-menu__container {
+    padding: 24px;
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    row-gap: 20px;
+    gap: 20px;
+    @media (min-width: 1000px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.pizzeria-menu__item {  
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
 }
 
 .pizzeria-menu__item-image {
-    width: clamp(100px, 100%, 250px);
 }
+
+

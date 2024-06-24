@@ -1,3 +1,5 @@
 @import url(global.css);
 @import url(header-nav.partial.css);
+@import url(special-offers.partial.css);
+@import url(faq.partial.css);
 @import url(footer.partial.css);

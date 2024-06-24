@@ -1,0 +1,15 @@
+.special-offers {
+
+}
+
+.special-offers__container {
+    display: flex;
+    gap: 20px;
+}
+
+.special-offers__item {
+}
+
+.special-offers__image {
+    border-radius: 15px;
+}

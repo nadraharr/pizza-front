@@ -1,0 +1,27 @@
+.faq {
+
+}
+
+.faq__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.faq__accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faq__accordion-item {
+
+}
+
+.faq__accordion-title {
+
+}
+
+.faq__accordion-inner {
+
+}
