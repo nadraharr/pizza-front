@@ -1,15 +1,83 @@
 .special-offers {
-
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.special-offers__container {
-    display: flex;
-    gap: 20px;
+.special-offers__carousel {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
 }
 
-.special-offers__item {
+.special-offers__carousel-inner {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
 }
 
-.special-offers__image {
-    border-radius: 15px;
+.special-offers__carousel-item {
+  flex: 0 0 33.33%;
+}
+
+.special-offers__carousel-image {
+  border-radius: 15px;
+}
+
+.special-offers__carousel-button {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: 700;
+  z-index: 1;
+  text-align: center;
+  transform: translateY(-50%);
+  transition: background-color 0.3s;
+  @media (max-width: 1000px) {
+    display: none !important;
+  }
+}
+.special-offers__carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-button--prev {
+  left: 10px;
+}
+
+.carousel-button--next {
+  right: 10px;
+}
+
+.special-offers__carousel-indicators-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.special-offers__carousel-indicator {
+  width: 12px;
+  height: 12px;
+  background-color: #cccccc;
+  border-radius: 50%;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.special-offers__carousel-indicator.active {
+  background-color: #333333;
+}
+
+.special-offers__carousel-indicator:hover {
+  background-color: #999999;
+  cursor: pointer;
 }
