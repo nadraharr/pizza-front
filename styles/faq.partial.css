@@ -1,27 +1,53 @@
 .faq {
-
-}
-
-.faq__container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 }
 
 .faq__accordion {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  min-width: 50%;
+  max-width: 600px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq__accordion-heading {
 }
 
 .faq__accordion-item {
+  width: 100%;
+}
 
+.faq__accordion-outer {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 24px;
 }
 
 .faq__accordion-title {
+}
 
+.faq__accordion-btn {
+  transition: all 0.5s ease-in-out;
 }
 
 .faq__accordion-inner {
+  max-height: 0;
+  overflow: hidden;  
+  padding-left: 15px;
+  transform: translate(-20px, -20px);
+  opacity: 0;  
+  transition: all 0.5s ease-in-out;
+}
 
+.faq__accordion-item.active {
+  .faq__accordion-btn {
+    transform: rotate(-45deg);
+  }
+
+  .faq__accordion-inner {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
 }

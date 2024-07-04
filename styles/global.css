@@ -10,16 +10,12 @@
 html {
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+body {
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  background-color: blanchedalmond;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+main {
 }
 
 .container {

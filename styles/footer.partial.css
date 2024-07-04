@@ -1,14 +1,13 @@
 .footer {
     background-color: black;
     color: blanchedalmond;
+    border-top-right-radius: 10%;
 }
 
 .footer__container {
-    height: 100%;
 }
 
 .footer__top {
-    height: 70%;
     border-bottom: solid wheat 2px;
     display: flex;
     flex-direction: column;
