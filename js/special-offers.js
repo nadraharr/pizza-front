@@ -85,7 +85,7 @@ function updateCarousel(currentSlide) {
 
 function resetInterval() {
   clearInterval(slideInterval);
-  slideInterval = setInterval(nextSlide, 3000);
+  slideInterval = setInterval(nextSlide, 4000);
 }
 
 function getSlidesPerView() {

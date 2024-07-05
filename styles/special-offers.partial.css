@@ -4,11 +4,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .special-offers__carousel {
   overflow-x: hidden;
-  position: relative;
   width: 100%;
 }
 
@@ -23,12 +23,13 @@
 }
 
 .special-offers__carousel-image {
-  border-radius: 15px;
+  border-radius: 35px;
+  padding: 10px;
 }
 
 .special-offers__carousel-button {
   position: absolute;
-  top: 50%;
+  top: 45%;
   width: 40px;
   height: 40px;
   border: none;
@@ -41,7 +42,7 @@
   text-align: center;
   transform: translateY(-50%);
   transition: background-color 0.3s;
-  @media (max-width: 1000px) {
+  @media (max-width: 1400px) {
     display: none !important;
   }
 }
@@ -50,18 +51,18 @@
 }
 
 .carousel-button--prev {
-  left: 10px;
+  left: -3%;
 }
 
 .carousel-button--next {
-  right: 10px;
+  right: -3%;
 }
 
 .special-offers__carousel-indicators-container {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
   gap: 10px;
+  margin-top: 10px;
 }
 
 .special-offers__carousel-indicator {
