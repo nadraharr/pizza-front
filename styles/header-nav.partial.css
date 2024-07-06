@@ -3,6 +3,19 @@ body.mobile {
   header {
     border-radius: unset;
   }
+  .header__navicon::before {
+    transform: rotate(-45deg);
+    top: 0 !important;
+  }
+
+  .header__navicon::after {
+    transform: rotate(45deg);
+    top: 0 !important;
+  }
+
+  .header__navicon {
+    background: transparent !important;
+  }
 }
 
 header {
@@ -21,23 +34,8 @@ header {
     min-height: 100px;
 
     .header__nav-logo {
-      width: 100%;
-      @media (min-width: 400px) {
-        width: 60%;
-      }
-      @media (min-width: 500px) {
-        width: 40%;
-      }
-      @media (min-width: 650px) {
-        width: 35%;
-      }
-      @media (min-width: 768px) {
-        width: 30%;
-      }
-      @media (min-width: 1024px) {
-        width: 15%;
-      }
     }
+    
     .header__nav-menu.mobile {
       height: 100vh;
       flex-direction: column;
@@ -52,6 +50,7 @@ header {
       .header__menu-btn {
         order: -1;
         margin-left: auto;
+        margin-bottom: 50px;
       }
 
       .cart-icon {
@@ -71,7 +70,11 @@ header {
       width: 100%;
       display: flex;
       justify-content: space-between;
-
+      height: 40px;
+      @media (min-width: 1023.5px) {
+        height: auto;
+      }
+      transition: all 0.5s ease-in-out;
       .header__nav-list {
         gap: 24px;
         display: flex;
@@ -118,7 +121,7 @@ header {
           width: 24px;
           height: 2px;
           position: relative;
-          background: wheat;
+          background: blanchedalmond;
           cursor: pointer;
           transition: background 0.2s ease-out;
         }
@@ -129,7 +132,7 @@ header {
           height: 100%;
           display: block;
           position: absolute;
-          background: wheat;
+          background: blanchedalmond;
           transition: all 0.2s ease-out;
         }
 
