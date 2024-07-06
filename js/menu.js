@@ -1,8 +1,8 @@
 function init() {
   import("./header-nav.js");
   import("./special-offers.js");
-  import("./faq.js");
   import("./meals.js");
+  import("./faq.js");  
 }
 
 const totalPartials = document.querySelectorAll(

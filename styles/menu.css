@@ -4,27 +4,24 @@
 @import url(faq.partial.css);
 @import url(footer.partial.css);
 
-.pizzeria-menu { 
+.pizzeria-menu {
 }
 
 .pizzeria-menu__container {
-     
-    padding: 0 5%;
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    @media (min-width: 1000px) {
-        grid-template-columns: repeat(4, 1fr);
-    }
+  padding: 0 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  @media (min-width: 1000px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
-.pizzeria-menu__item {  
-    border-radius: 10px;
-    padding: 5px;
-    background-color: white;
+.pizzeria-menu__item {
+  border-radius: 10px;
+  padding: 5px;
+  background-color: white;
 }
 
 .pizzeria-menu__item-image {
 }
-
-
