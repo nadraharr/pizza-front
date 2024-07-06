@@ -4,9 +4,9 @@ const links = document.querySelectorAll("li");
 button.addEventListener("click", toggleMobileMenu);
 
 function toggleMobileMenu() {
-  menu.classList.toggle("mobile");
-  document.body.classList.toggle("mobile");
-  if (menu.classList.contains("mobile")) {
+  menu.classList.toggle("burger-open");
+  document.body.classList.toggle("burger-open");
+  if (menu.classList.contains("burger-open")) {
     links.forEach((link) => {
       link.addEventListener("click", toggleMobileMenu);
     });
