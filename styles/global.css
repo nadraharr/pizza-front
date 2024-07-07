@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap");
 
 * {
   margin: 0;
@@ -37,4 +37,3 @@ a {
 li {
   list-style: none;
 }
-

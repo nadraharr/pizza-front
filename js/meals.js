@@ -12,17 +12,22 @@ async function fetchAndRenderMenu() {
 
       article.innerHTML = `
             <div class="pizzeria-menu__item-image">
-              <img src="styles/img//pizzas/${pizza.id}.webp" alt="Pizza image" />
+              <img src="styles/img//pizzas/${
+                pizza.id
+              }.webp" alt="Pizza image" />
             </div>
             <div class="pizzeria-menu__item-description">
-              <p class="pizzeria-menu__item-title">${pizza.title}</p>
               <p class="pizzeria-menu__item-ingredients">
-                Ingredients: ${pizza.ingredients.join(", ")}
+                ${pizza.ingredients.join(", ")}
               </p>
+              <p class="pizzeria-menu__item-title">${pizza.title}</p>
+              <div class="counter">
+                <button class="counter__button" id="decrease"><</button>
+                <div class="counter__display" id="count">0</div>
+                <button class="counter__button" id="increase">></button>
+              </div>
               <p class="pizzeria-menu__item-price">
-                ${
-                  pizza.price
-                } $ <a href="#" class="pizzeria-menu__item-button">Add to cart</a>
+                ${pizza.price}$ 
               </p>
             </div>
           `;

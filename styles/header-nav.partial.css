@@ -25,8 +25,10 @@ body.burger-open {
   .cart-icon {
     height: 40px;
   }
+  .header__nav-logo {
+    display: none;
+  }
 }
-
 .header {
   background-image: linear-gradient(#2e2f328c, #1f202299),
     url("img/header-bg.jpg");
@@ -37,6 +39,7 @@ body.burger-open {
   border-bottom-right-radius: 10%;
   z-index: 999;
   position: sticky;
+  width: 100%;
   top: 0;
   @media (min-width: 1023.5px) {
     position: static;
@@ -161,5 +164,27 @@ body.burger-open {
     @media (min-width: 1023.5px) {
       height: auto;
     }
+  }
+}
+
+.header__nav-menu.burger-open {
+  .header__nav-logo {
+    opacity: 0;
+    transition: opacity 0.5s 0.5s;
+  }
+}
+.header__nav-logo {
+  width: 110px;
+  height: 85px;
+  align-self: center;
+  margin-right: 30px;
+  opacity: 1;
+  transition: opacity 0.5s 0.5s;
+  @starting-style {
+    opacity: 0;
+  }
+  img {
+    height: 80px;
+    width: 100px;
   }
 }
