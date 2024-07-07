@@ -47,7 +47,6 @@ body.burger-open {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  min-height: 100px;
 }
 
 .header__nav-menu {
@@ -59,6 +58,7 @@ body.burger-open {
   .header__nav-list {
     display: none;
     gap: 24px;
+    transition: opacity 0.75s ease-in-out;
   }
   @media (min-width: 1023.5px) {
     align-items: center;
@@ -76,16 +76,22 @@ body.burger-open {
     flex-direction: column;
     width: 100%;
     align-items: center;
+    opacity: 1;
+    @starting-style {
+      opacity: 0;
+    }
   }
 }
 
 .header__menu-btn {
   display: block;
   width: auto;
-  height: auto;
+  height: 40px;
   padding: 19px 8px;
   cursor: pointer;
   transition: opacity 0.5s ease;
+  background: none; 
+  border: none; 
   @media (min-width: 1024px) {
     display: none;
   }

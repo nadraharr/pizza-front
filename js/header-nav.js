@@ -1,18 +1,19 @@
 const menu = document.querySelector(".header__nav-menu");
 const button = document.querySelector(".header__menu-btn");
-const links = document.querySelectorAll("li");
 button.addEventListener("click", toggleMobileMenu);
+const links = document.querySelectorAll("li");
+links.forEach((link) => {
+  link.addEventListener("click", closeMobileMenu);
+});
+const cart = document.querySelector(".cart-icon");
+cart.addEventListener("click", closeMobileMenu);
 
 function toggleMobileMenu() {
   menu.classList.toggle("burger-open");
   document.body.classList.toggle("burger-open");
-  if (menu.classList.contains("burger-open")) {
-    links.forEach((link) => {
-      link.addEventListener("click", toggleMobileMenu);
-    });
-  } else {
-    links.forEach((link) => {
-      link.removeEventListener("click", toggleMobileMenu);
-    });
-  }
+}
+
+function closeMobileMenu() {
+  menu.classList.remove("burger-open");
+  document.body.classList.remove("burger-open");
 }
