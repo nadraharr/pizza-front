@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,700&display=swap');
 
 * {
   margin: 0;
@@ -13,7 +13,9 @@ html {
 }
 
 body {
-  font-family: "Comic Neue bold", cursive;
+  font-family: "Comic Neue", cursive;
+  font-weight: 700;
+  font-style: normal;
   background-color: #ffebcd;
 }
 
