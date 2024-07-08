@@ -2,6 +2,7 @@ body.burger-open {
   overflow: hidden;
   header {
     border-radius: unset;
+    height: 100vh;
   }
   .header__navicon::before {
     transform: rotate(-45deg);
@@ -41,6 +42,8 @@ body.burger-open {
   position: sticky;
   width: 100%;
   top: 0;
+  height: 88px;
+  transition: all 0.5s ease-in-out;
   @media (max-width: 500px) {
     background-position: 50% 100%;
   }
@@ -170,21 +173,13 @@ body.burger-open {
   }
 }
 
-.header__nav-menu.burger-open {
-  .header__nav-logo {
-    opacity: 0;
-    transition: opacity 0.5s 0.5s;
-  }
-}
 .header__nav-logo {
   width: 85px;
   align-self: center;
   margin-right: 30px;
   opacity: 1;
-  transition: opacity 0s 0.5s;
+  transition: opacity 0s 0.2s;
   @starting-style {
     opacity: 0;
-  }
-  img {
   }
 }
