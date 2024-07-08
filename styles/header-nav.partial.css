@@ -132,7 +132,7 @@ body.burger-open {
 }
 .header__nav-item {
   a {
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: 0.07rem;
     color: blanchedalmond;
     position: relative;
